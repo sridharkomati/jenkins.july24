@@ -8,7 +8,7 @@ stages {
         stage('git') {
             steps {
                 git branch: 'developer',
-                    url: 'https://github.com/wakaleo/game-of-life.git'
+                    url: 'https://github.com/sridharkomati/jenkins.july24.git'
             }
         stage('build') {
             steps {
