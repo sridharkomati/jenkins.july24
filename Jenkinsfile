@@ -1,8 +1,6 @@
 pipeline {
     agent { label 'openjdk-8'}
-    timeout(time: 1, unit: 'HOURS')
     triggers { pollSCM('* * * * *') }
-}
 stages { 
     stage('git') {
         steps {
@@ -16,5 +14,5 @@ stages {
             sh 'mvn --version'
         }
     }    
-    }
+   }
 }
