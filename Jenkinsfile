@@ -7,7 +7,7 @@ pipeline {
 stages { 
         stage('git') {
             steps {
-                git branch: 'develop',
+                git branch: 'developer',
                     url: 'https://github.com/wakaleo/game-of-life.git'
             }
         stage('build') {
