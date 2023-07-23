@@ -16,6 +16,7 @@ stages {
             sh 'java -version' 
             sh 'mvn --version'
         }
-    } 
+    }    
+    }
     }
 }
