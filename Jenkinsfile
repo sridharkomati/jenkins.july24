@@ -7,6 +7,7 @@ stages {
             git branch: 'developer',
                 url: 'https://github.com/sridharkomati/jenkins.july24.git'
         }
+    }    
     stage('build') {
         steps {
             sh 'ls'
@@ -15,5 +16,4 @@ stages {
         }
     }    
    }
-}
 }
